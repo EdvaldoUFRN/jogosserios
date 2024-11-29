@@ -2,6 +2,8 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
+
+# Ignore the following folders, which contain temporary files or other content that doesn't need to be versioned:
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -47,7 +49,7 @@ ExportedObj/
 *.opendb
 *.VC.db
 
-# Unity3D generated meta files
+# Unity3D generated meta files (important for Unity)
 *.pidb.meta
 *.pdb.meta
 *.mdb.meta
@@ -55,7 +57,7 @@ ExportedObj/
 # Unity3D generated file on crash reports
 sysinfo.txt
 
-# Builds
+# Builds (ignore compiled builds)
 *.apk
 *.aab
 *.unitypackage
@@ -64,9 +66,9 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-# Packed Addressables
-/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+# Packed Addressables (ignore packed addressables data files)
+#[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
-# Temporary auto-generated Android Assets
-/[Aa]ssets/[Ss]treamingAssets/aa.meta
-/[Aa]ssets/[Ss]treamingAssets/aa/*
+# Temporary auto-generated Android Assets (ignore auto-generated streaming assets)
+#[Aa]ssets/[Ss]treamingAssets/aa.meta
+#[Aa]ssets/[Ss]treamingAssets/aa/*
